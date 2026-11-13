@@ -1,0 +1,35 @@
+name: Build macOS VST3
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sculpt-key-macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Universal macOS VST3
+    runs-on: macos-15
+    timeout-minutes: 40
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build, verify architecture and sign ad-hoc
+        run: bash tools/build-macos.sh
+
+      - name: Upload VST3 archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sculpt-Key-macOS-VST3
+          path: dist/Sculpt-Key-macOS-VST3.zip
+          if-no-files-found: error
+          retention-days: 14
