@@ -1,0 +1,44 @@
+{
+  "sampleRate": 44100,
+  "seconds": 44.0,
+  "peakDbfs": -2.4522468458812345,
+  "finite": true,
+  "sections": [
+    {
+      "name": "Piano",
+      "rmsDbfs": -23.357720038634227,
+      "peakDbfs": -2.4522468458812345,
+      "highAbove2kPercent": 1.0624910584721732,
+      "stereoCorrelation": 0.1936916853932488,
+      "dc": 7.857988030281557e-06
+    },
+    {
+      "name": "Rhodes",
+      "rmsDbfs": -22.800618433194778,
+      "peakDbfs": -10.010191703335627,
+      "highAbove2kPercent": 0.018048069970375634,
+      "stereoCorrelation": 0.9957308162939623,
+      "dc": 2.493825899500425e-06
+    },
+    {
+      "name": "Hammond",
+      "rmsDbfs": -22.957985333710532,
+      "peakDbfs": -9.151114304703755,
+      "highAbove2kPercent": 0.6638179974859231,
+      "stereoCorrelation": 0.9965857033841478,
+      "dc": 9.718222412662981e-06
+    },
+    {
+      "name": "Synth",
+      "rmsDbfs": -23.121902601244596,
+      "peakDbfs": -8.134316527147059,
+      "highAbove2kPercent": 1.9409377286589453,
+      "stereoCorrelation": 0.9524451004185323,
+      "dc": -0.0001494634719122024
+    }
+  ],
+  "measurementNote": "Each anchor uses its first six seconds. RMS is not perceptual loudness.",
+  "estimated4xTruePeakDbfs": -2.446719470850164,
+  "last200msPeakDbfs": -200.0,
+  "anchorRmsRangeDb": 0.5571016054394491
+}

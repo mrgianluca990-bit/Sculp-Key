@@ -1,0 +1,79 @@
+SCULPT KEY 0.1.1 — RHODES JAZZ E HAMMOND ROCK
+Data: 13 novembre 2026
+
+STATO
+Progetto sorgente completo, banca incorporabile e anteprima renderizzata.
+Il VST3 macOS di questa revisione non è ancora compilato o provato in DAW.
+
+CORREZIONI TIMBRICHE
+Rhodes: corpo più rotondo, seconda e terza armonica più moderate, tine meno
+presente e con decadimento più rapido. Il bark entra progressivamente sopra
+velocity 0,68. Attacco dedicato di 2,5-5 ms in funzione del tocco e filtro più
+morbido. Il gain del solo voicing è calibrato per conservare il livello.
+Hammond: registrazione più piena su 16', 5 1/3', 4' e medi/alti, percussion
+più presente e click più incisivo. Quota lieve del pickup antialias esistente;
+nessun nuovo waveshaper o effetto aggiunto. Movimento stereo conservato.
+Piano, Synth, MIDI, clock, pitch, RR e parametri conservano il comportamento
+precedente. Le stesse parziali alimentano il riferimento originale della
+scelta delle voci, per non cambiare il piano quando altre voci vengono rubate.
+
+CONFRONTO CON 0.1.0 SULLA BANCA REALE
+Stessi 90 WAV stereo, stessa frase MIDI, velocity, sustain e volume.
+Nessuna normalizzazione o elaborazione esterna. Dati dettagliati in
+REVISIONE-0.1.1-METRICHE.json.
+- Piano e Synth: identici bit per bit nei float nei rispettivi segmenti
+  di 8 secondi, code incluse.
+- Anche nella prova di 48 voci più 41 nuovi note-on e successivo rilascio,
+  Piano e Synth restano bit-identici alle rispettive baseline.
+- Rhodes: RMS del segmento -0,067 dB rispetto a prima; corpo 150-600 Hz
+  +0,081 dB; 600-2000 Hz -6,309 dB; 2-8 kHz -17,098 dB.
+- Rhodes: risposta alla velocity monotona nel controllo mirato. H3/H1
+  passa da 0,02186 a velocity 0,60 a 0,10046 a velocity 0,95: il tocco forte
+  conserva una componente di bark più presente.
+- Hammond: RMS +0,116 dB; corpo600-2000 Hz +4,027 dB e2-8 kHz +2,511 dB.
+- Hammond alto, MIDI 96: energia fuori dalla griglia armonica misurata
+  da -89,863 a -94,682 dBFS. Nessun nuovo alias evidente in questa prova
+  mirata; non è una certificazione per ogni combinazione di note e bend.
+
+CONTROLLI ESEGUITI SU QUESTA REVISIONE
+- Motore C++17: 14 gruppi comportamentali superati, zero errori.
+  Compilazione -O2 -Wall -Wextra -Wpedantic -Werror, senza warning.
+- Nessuna soglia o asserzione della suite originale è stata modificata.
+- Accordi/stereo/velocity, note ripetute FIFO, sustain per canale,
+  pitch bend per canale, CC123/CC120, reset, superamento delle 48 voci,
+  code limitate, morph dopo la fine del campione e nota tenuta, RR/reset,
+  indipendenza dai buffer, 44,1/48/96 kHz, gain/meter e dati non validi.
+- Nessuna allocazione C++ new/new[]/aligned in MIDI/render dopo setup.
+  Il test non misura il callback completo del wrapper JUCE.
+- Anteprima float finita, senza clipping, generata dal motore definitivo.
+- Il test a 48 voci ha osservato circa 60,37% di un core nel runtime Linux,
+  rispetto a 48,23% della baseline nella stessa serie di prove. È una misura
+  del runtime disponibile e non una garanzia di prestazione sul Mac.
+
+ANTEPRIMA PCM16 — 44 SECONDI STEREO A 44,1 KHZ
+Picco PCM -2,45 dBFS; stima a 4x -2,45 dBFS; ultimi 200 ms silenziosi.
+RMS sui primi 6 secondi di ciascun segmento (non loudness percepita):
+- Piano -23,36 dBFS; picco -2,45 dBFS.
+- Rhodes -22,80 dBFS; picco -10,01 dBFS.
+- Hammond -22,96 dBFS; picco -9,15 dBFS.
+- Synth -23,12 dBFS; picco -8,13 dBFS.
+Differenza massima RMS fra le quattro frasi: 0,56 dB.
+
+CONTROLLI STORICI E CONTENUTO CONSERVATO
+Nella 0.1.0 il wrapper Processor/Editor ha superato un controllo sintattico
+con gli header ufficiali JUCE 8.0.4. Non era una compilazione o un link macOS.
+Processor, Editor, identificatori e formato dello stato restano invariati.
+Conservati i 90 WAV stereo, 30 root per 3 dinamiche, 44,1 kHz/16 bit e licenze.
+Script build, workflow macos-15, verifica lipo e firma dopo i crediti invariati.
+
+LIMITI
+Il Rhodes e l'Hammond sono modellazioni del carattere, non repliche complete
+di un esemplare storico. Il RR è costituito da 4 variazioni modellate, non
+quattro riprese reali. Il piano è un subset Salamander con code limitate:
+non comprende i layer separati di pedale, rilascio o risonanza simpatetica.
+Restano da verificare build/link/firma macOS, riconoscimento nella DAW,
+controller MIDI, stato salvato, prestazioni al proprio buffer e timbro.
+
+EVIDENZE
+core-tests.txt, preview-render.txt, preview-metrics.json,
+REVISIONE-0.1.1-METRICHE.json, SNAPSHOT.txt.

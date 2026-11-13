@@ -1,0 +1,260 @@
+{
+  "sample_rate": 44100,
+  "stereo_sample_count": 1940400,
+  "samples_in_bank": 90,
+  "output_gain": 1.0,
+  "normalisation": false,
+  "before_header_sha256": "cebb86b4fd2c98e637338378e8a78018979f996f9c22afd18f8a03c57ff12f5d",
+  "after_header_sha256": "a9fb85767e953f0c3e0cdcd3257e48612fe9fbffe72dd2a91cb60d562f917210",
+  "global_peak_before": 0.754060685634613,
+  "global_peak_after": 0.754060685634613,
+  "clipped_samples_after": 0,
+  "anchors": [
+    {
+      "name": "Piano",
+      "morph": 0.0,
+      "changed_float_values_including_tails": 0,
+      "before": {
+        "rms_first6s_dbfs": -23.35745782055212,
+        "peak": 0.754060685634613,
+        "attack_first60ms_dbfs": -19.16952235286456,
+        "body_150_500ms_dbfs": -21.366886135787695,
+        "body_bands_dbfs": {
+          "20-150Hz": -30.261914585573464,
+          "150-600Hz": -23.134516390300995,
+          "600-2000Hz": -31.026646361124634,
+          "2000-8000Hz": -43.12744496934564,
+          "8000-20000Hz": -96.05269620471582
+        },
+        "stereo_correlation": 0.19369161571449603
+      },
+      "after": {
+        "rms_first6s_dbfs": -23.35745782055212,
+        "peak": 0.754060685634613,
+        "attack_first60ms_dbfs": -19.16952235286456,
+        "body_150_500ms_dbfs": -21.366886135787695,
+        "body_bands_dbfs": {
+          "20-150Hz": -30.261914585573464,
+          "150-600Hz": -23.134516390300995,
+          "600-2000Hz": -31.026646361124634,
+          "2000-8000Hz": -43.12744496934564,
+          "8000-20000Hz": -96.05269620471582
+        },
+        "stereo_correlation": 0.19369161571449603
+      },
+      "delta_db": {
+        "rms_first6s_dbfs": 0.0,
+        "attack_first60ms_dbfs": 0.0,
+        "body_150_500ms_dbfs": 0.0
+      },
+      "band_delta_db": {
+        "20-150Hz": 0.0,
+        "150-600Hz": 0.0,
+        "600-2000Hz": 0.0,
+        "2000-8000Hz": 0.0,
+        "8000-20000Hz": 0.0
+      }
+    },
+    {
+      "name": "Rhodes",
+      "morph": 0.3333333333333333,
+      "changed_float_values_including_tails": 553894,
+      "before": {
+        "rms_first6s_dbfs": -22.73335585925658,
+        "peak": 0.32551348209381104,
+        "attack_first60ms_dbfs": -22.458179611367356,
+        "body_150_500ms_dbfs": -21.684389883156065,
+        "body_bands_dbfs": {
+          "20-150Hz": -28.91850391467949,
+          "150-600Hz": -22.841854661482476,
+          "600-2000Hz": -36.049729907631594,
+          "2000-8000Hz": -42.3452359803051,
+          "8000-20000Hz": -118.03137057979798
+        },
+        "stereo_correlation": 0.995726840942788
+      },
+      "after": {
+        "rms_first6s_dbfs": -22.800353228343834,
+        "peak": 0.31587380170822144,
+        "attack_first60ms_dbfs": -22.7643096541038,
+        "body_150_500ms_dbfs": -21.749893765681996,
+        "body_bands_dbfs": {
+          "20-150Hz": -28.715578162124736,
+          "150-600Hz": -22.76119732135561,
+          "600-2000Hz": -42.35847897402418,
+          "2000-8000Hz": -59.44302616946235,
+          "8000-20000Hz": -128.05886843500096
+        },
+        "stereo_correlation": 0.9957308620339003
+      },
+      "delta_db": {
+        "rms_first6s_dbfs": -0.06699736908725384,
+        "attack_first60ms_dbfs": -0.30613004273644506,
+        "body_150_500ms_dbfs": -0.06550388252593109
+      },
+      "band_delta_db": {
+        "20-150Hz": 0.20292575255475498,
+        "150-600Hz": 0.08065734012686576,
+        "600-2000Hz": -6.308749066392586,
+        "2000-8000Hz": -17.09779018915725,
+        "8000-20000Hz": -10.02749785520298
+      }
+    },
+    {
+      "name": "Hammond",
+      "morph": 0.6666666666666666,
+      "changed_float_values_including_tails": 500968,
+      "before": {
+        "rms_first6s_dbfs": -23.07372030003031,
+        "peak": 0.30239084362983704,
+        "attack_first60ms_dbfs": -23.934930745096477,
+        "body_150_500ms_dbfs": -22.72190925694535,
+        "body_bands_dbfs": {
+          "20-150Hz": -30.34027220295362,
+          "150-600Hz": -23.81278661542714,
+          "600-2000Hz": -35.60683865775385,
+          "2000-8000Hz": -51.99028358496089,
+          "8000-20000Hz": -101.89993334619945
+        },
+        "stereo_correlation": 0.9966602518067159
+      },
+      "after": {
+        "rms_first6s_dbfs": -22.95772021650162,
+        "peak": 0.34871819615364075,
+        "attack_first60ms_dbfs": -23.77516599187585,
+        "body_150_500ms_dbfs": -22.647843092355963,
+        "body_bands_dbfs": {
+          "20-150Hz": -30.895677563549995,
+          "150-600Hz": -24.051646203584745,
+          "600-2000Hz": -31.579936608749854,
+          "2000-8000Hz": -49.479364549554674,
+          "8000-20000Hz": -106.95025800547052
+        },
+        "stereo_correlation": 0.996585781979957
+      },
+      "delta_db": {
+        "rms_first6s_dbfs": 0.1160000835286894,
+        "attack_first60ms_dbfs": 0.1597647532206281,
+        "body_150_500ms_dbfs": 0.07406616458938586
+      },
+      "band_delta_db": {
+        "20-150Hz": -0.5554053605963745,
+        "150-600Hz": -0.23885958815760588,
+        "600-2000Hz": 4.0269020490039935,
+        "2000-8000Hz": 2.510919035406218,
+        "8000-20000Hz": -5.0503246592710695
+      }
+    },
+    {
+      "name": "Synth",
+      "morph": 1.0,
+      "changed_float_values_including_tails": 0,
+      "before": {
+        "rms_first6s_dbfs": -23.12164112619744,
+        "peak": 0.392013818025589,
+        "attack_first60ms_dbfs": -19.653293375158235,
+        "body_150_500ms_dbfs": -22.008652646365356,
+        "body_bands_dbfs": {
+          "20-150Hz": -28.811918655702,
+          "150-600Hz": -23.568692840939548,
+          "600-2000Hz": -32.320363405077885,
+          "2000-8000Hz": -41.732315217371564,
+          "8000-20000Hz": -62.351901182911256
+        },
+        "stereo_correlation": 0.9524450475777667
+      },
+      "after": {
+        "rms_first6s_dbfs": -23.12164112619744,
+        "peak": 0.392013818025589,
+        "attack_first60ms_dbfs": -19.653293375158235,
+        "body_150_500ms_dbfs": -22.008652646365356,
+        "body_bands_dbfs": {
+          "20-150Hz": -28.811918655702,
+          "150-600Hz": -23.568692840939548,
+          "600-2000Hz": -32.320363405077885,
+          "2000-8000Hz": -41.732315217371564,
+          "8000-20000Hz": -62.351901182911256
+        },
+        "stereo_correlation": 0.9524450475777667
+      },
+      "delta_db": {
+        "rms_first6s_dbfs": 0.0,
+        "attack_first60ms_dbfs": 0.0,
+        "body_150_500ms_dbfs": 0.0
+      },
+      "band_delta_db": {
+        "20-150Hz": 0.0,
+        "150-600Hz": 0.0,
+        "600-2000Hz": 0.0,
+        "2000-8000Hz": 0.0,
+        "8000-20000Hz": 0.0
+      }
+    }
+  ],
+  "targeted_before": {
+    "rhodes_velocity": [
+      {
+        "velocity": 0.25,
+        "body_rms_dbfs": -36.63463635280439,
+        "early_h3_h1": 0.05753198615232314,
+        "early_tine_6p8_h1": 0.08676467918624896
+      },
+      {
+        "velocity": 0.6,
+        "body_rms_dbfs": -30.16174764794048,
+        "early_h3_h1": 0.10366012537111216,
+        "early_tine_6p8_h1": 0.15717794730290738
+      },
+      {
+        "velocity": 0.95,
+        "body_rms_dbfs": -26.587999019453036,
+        "early_h3_h1": 0.17676289717133176,
+        "early_tine_6p8_h1": 0.29083723186328053
+      }
+    ],
+    "rhodes_body_monotonic": true,
+    "rhodes_bark_high_vs_medium_db": 4.6355876268783565,
+    "hammond_note96_off_grid_dbfs": -89.86283935691577,
+    "hammond_note96_off_grid_relative_db": -61.1617089577338,
+    "off_grid_method": "MIDI96 held, 44.1kHz, 0.2\u20130.9s Hann window; power outside \u00b120Hz around multiples of f0/2. It includes leakage/noise and is not a comprehensive aliasing test."
+  },
+  "targeted_after": {
+    "rhodes_velocity": [
+      {
+        "velocity": 0.25,
+        "body_rms_dbfs": -36.530540264878915,
+        "early_h3_h1": 0.0193420956508475,
+        "early_tine_6p8_h1": 0.01809908558634708
+      },
+      {
+        "velocity": 0.6,
+        "body_rms_dbfs": -30.37081473441324,
+        "early_h3_h1": 0.021856629532240407,
+        "early_tine_6p8_h1": 0.03136514981389292
+      },
+      {
+        "velocity": 0.95,
+        "body_rms_dbfs": -26.23381334912068,
+        "early_h3_h1": 0.10045774444057413,
+        "early_tine_6p8_h1": 0.051482302015475344
+      }
+    ],
+    "rhodes_body_monotonic": true,
+    "rhodes_bark_high_vs_medium_db": 13.248004634345026,
+    "hammond_note96_off_grid_dbfs": -94.68183398153579,
+    "hammond_note96_off_grid_relative_db": -65.78505912955062,
+    "off_grid_method": "MIDI96 held, 44.1kHz, 0.2\u20130.9s Hann window; power outside \u00b120Hz around multiples of f0/2. It includes leakage/noise and is not a comprehensive aliasing test."
+  },
+  "stealing_endpoint_changed_float_values": {
+    "Piano": 0,
+    "Synth": 0
+  },
+  "tests": {
+    "before": "PASS",
+    "before_48voice_cpu_percent_one_run": 48.2247,
+    "after": "PASS",
+    "after_48voice_cpu_percent_one_run": 60.3666,
+    "criteria_changed": false,
+    "native_macos_build": false
+  }
+}

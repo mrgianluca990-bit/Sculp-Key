@@ -1,0 +1,22 @@
+SCULPT KEY — ANTEPRIMA 0.1.1
+
+00:00–00:08  Piano
+00:08–00:16  Rhodes jazz: più caldo e rotondo, attacco meno metallico
+00:16–00:24  Hammond rock: registrazione più piena e incisiva
+00:24–00:32  Synth
+00:32–00:44  Accordo tenuto e passaggio continuo Piano → Rhodes → Hammond → Synth;
+             rilascio del pedale a 00:41,4, seguito dalla coda.
+
+Le prime quattro sezioni usano la stessa frase, gli stessi valori di velocity,
+lo stesso sustain e lo stesso livello di uscita. Progressione: Dm9, G13,
+Cmaj9, A7(b9), con brevi note melodiche.
+
+Audio stereo, 44,1 kHz, PCM16. Render dal medesimo KeyEngine C++ del plugin.
+Nessun riverbero o mastering aggiunto; nessuna normalizzazione per timbro.
+
+Il piano usa campioni reali stereo. Rhodes, Hammond e synth sono modellati.
+Le quattro variazioni round robin sono modellate, non quattro take registrate.
+
+Il piano approvato e il Synth mantengono il suono della versione 0.1.0.
+Valutare: risposta al tocco e calore del Rhodes, corpo e grinta dell'organo,
+bilanciamento dei livelli e continuità dell'accordo durante il morph.

@@ -1,0 +1,17 @@
+PASS: empty/malformed bank and invalid input
+PASS: real stereo, chords and velocity
+PASS: sustain per MIDI channel
+PASS: repeated-note FIFO
+PASS: CC123 versus immediate CC120
+PASS: Reset Controllers per channel
+PASS: pitch bend per MIDI channel
+PASS: held morph after sample end
+PASS: 48 voices and bounded stealing tails
+PASS: four modelled RR variations and reset
+PASS: sample-timed event/block invariance
+PASS: 44.1/48/96 kHz and sample pitch
+PASS: output gain and peak metering
+PASS: no C++ heap allocation in MIDI/render
+CPU observation: 48 held voices, morph 85%, 48 kHz, blocks 256; 1.0027 s audio / 0.6053 s process CPU / 0.6078 s wall; CPU/audio 60.3666%
+CPU figures describe this machine and run; no fixed performance threshold is imposed.
+PASS: 14 core behaviour checks, 0 failure(s).
