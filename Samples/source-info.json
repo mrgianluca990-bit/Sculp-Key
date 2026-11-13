@@ -1,0 +1,2874 @@
+{
+  "repository": "https://github.com/sfzinstruments/SalamanderGrandPiano",
+  "commit": "3382bf9496bba2486f5ab0de55a264d1dfc38404",
+  "upstreamArchive": "https://archive.org/details/SalamanderGrandPianoV3",
+  "instrument": "Yamaha C5",
+  "recordingAuthor": "Alexander Holm",
+  "sfzRemappingCredit": "kinwie",
+  "license": "CC-BY-3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "originalRootNotes": [
+    21,
+    24,
+    27,
+    30,
+    33,
+    36,
+    39,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57,
+    60,
+    63,
+    66,
+    69,
+    72,
+    75,
+    78,
+    81,
+    84,
+    87,
+    90,
+    93,
+    96,
+    99,
+    102,
+    105,
+    108
+  ],
+  "includedSourceVelocityLayers": [
+    4,
+    8,
+    12
+  ],
+  "sourceLayerVelocityRangesInUpstreamSfz": {
+    "4": [
+      37,
+      43
+    ],
+    "8": [
+      57,
+      64
+    ],
+    "12": [
+      89,
+      96
+    ]
+  },
+  "recordedRoundRobinsPerNoteAndLayer": 1,
+  "roundRobinNote": "No distinct recorded RR takes are claimed. Any automatic variations are modeled in the engine.",
+  "changes": [
+    "Selected 30 original chromatic roots in minor-third steps, A0 through C8, at source velocity layers 4, 8, 12.",
+    "Conservative deterministic leading trim: 1ms channel RMS, threshold=max(3/32768, sourcePeak*0.003), two of three windows, retaining 2ms preroll; at most 15ms removed.",
+    "Kept the original stereo image, pitch, relative velocity-layer levels and attack. No sample or layer normalization, no time stretch, no random offsets.",
+    "Resampled 48kHz to 44.1kHz with a rational 147/160 polyphase Kaiser-8.6 filter.",
+    "Tail limits: 10s for MIDI roots below48, 8s for roots48–81, 6s for roots84–108; shorter source tails remain shorter.",
+    "Applied a 300ms half-cosine tail fade, then round-to-nearest PCM16 conversion without random dither.",
+    "The source SFZ, optional string resonance, release, hammer and pedal sample layers are not loaded by this subset."
+  ],
+  "conversionTools": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "references": [
+    {
+      "name": "LICENSE",
+      "size": 19467,
+      "gitBlobSha1": "1a16e05564d2aaa880bbe9e506a0a0226d8742cc",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/LICENSE",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76"
+    },
+    {
+      "name": "README.md",
+      "size": 4980,
+      "gitBlobSha1": "98a08b1e883461eee1090e460acecc1e517d33d4",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/README.md",
+      "sha256": "be275b843d10a22e614e5f52bd414fe2cbdcbfd6165894b1dcca738e8cbf391a"
+    },
+    {
+      "name": "Salamander Grand Piano V3.sfz",
+      "size": 2113,
+      "gitBlobSha1": "1e657bf0b5410f8a138941b45810a07272fb9265",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Salamander%20Grand%20Piano%20V3.sfz",
+      "sha256": "c8b282f03fdb2d9e6be24a99df0d97a05e7ece718d1a14e0b882c518161f7837"
+    },
+    {
+      "name": "Data/hammer.txt",
+      "size": 4497,
+      "gitBlobSha1": "0726c384c660cdc9ed5a13fd2a5602a15169e393",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/hammer.txt",
+      "sha256": "8258e15e6058f88a3a3b1ef9a587411dd327c01b11486183caad3b8f1fe96297"
+    },
+    {
+      "name": "Data/notes.txt",
+      "size": 1306,
+      "gitBlobSha1": "f0365e114cb270301c64f2e5490a87b4e2486f07",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/notes.txt",
+      "sha256": "6d8a8b978a442e582b6b7fa31b2afa76e033efcdf2f70c811a0d7a09060f5471"
+    },
+    {
+      "name": "Data/pedal.txt",
+      "size": 502,
+      "gitBlobSha1": "e29a04254c0e6adc08bced652e563176ee0f98ba",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/pedal.txt",
+      "sha256": "ac027c0c658d9a74f74644013f141e7d8c524a35dab38d44ddb9b8a8c8b790c5"
+    },
+    {
+      "name": "Data/region.txt",
+      "size": 3787,
+      "gitBlobSha1": "197f15047820af6978b955d5fadf08b197bb7ad1",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/region.txt",
+      "sha256": "f6341fe2e2a5417f4e7f3499a7dfdf0a4327a58bd6f12201d63d63ed7d557193"
+    },
+    {
+      "name": "Data/str_res.txt",
+      "size": 6484,
+      "gitBlobSha1": "95ac29105a9fd2ee32596c22c9de7a539e380088",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/str_res.txt",
+      "sha256": "1dc2c4d84668140eab1f206f0116aec5deefc818ae48d04374277d09a680f8f8"
+    },
+    {
+      "name": "Data/tune_nat.txt",
+      "size": 539,
+      "gitBlobSha1": "0d575c74ab95e92711d4f63a957927945f95955a",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/tune_nat.txt",
+      "sha256": "85d40bf0956baceb99ec739b5270ea2d5957b73845e397a5d99ab10a08297337"
+    },
+    {
+      "name": "Data/tune_ret.txt",
+      "size": 576,
+      "gitBlobSha1": "f6baa326885ce48b9caa3eac79974064aa2dc127",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/tune_ret.txt",
+      "sha256": "e19f23ad8e94dee71a4deda6b1f8aef85e8f79720a9dbcd165b189cbae8b9d50"
+    },
+    {
+      "name": "Data/vel_01.txt",
+      "size": 621,
+      "gitBlobSha1": "319704b1a0588c02a079b6663160ecd8401e56c4",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_01.txt",
+      "sha256": "89a44c1dbfa579e230fbc596a1ec45f12d3221ba6ecf5a1d409dcd2aa0c6dbeb"
+    },
+    {
+      "name": "Data/vel_02.txt",
+      "size": 620,
+      "gitBlobSha1": "e3b6a368f836d23445a8a0a8b0782321b3f2bea5",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_02.txt",
+      "sha256": "34078b907fc8cf0be93aa8de28084c0008654da5fee96a100ae90684b5107848"
+    },
+    {
+      "name": "Data/vel_03.txt",
+      "size": 624,
+      "gitBlobSha1": "839f42a62824e578f02629cf03ee6fe102a9d472",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_03.txt",
+      "sha256": "88690274780cd64185977ed0eefbab3f71ec7a0a1475728312b983815045d1cb"
+    },
+    {
+      "name": "Data/vel_04.txt",
+      "size": 622,
+      "gitBlobSha1": "1719fac9036b65c938f91d22dc0ec429c3182a47",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_04.txt",
+      "sha256": "6512f0f95577a5bf94dd1ff373f3dcda95af0ebdd3f1966da6516395f906514b"
+    },
+    {
+      "name": "Data/vel_05.txt",
+      "size": 622,
+      "gitBlobSha1": "9213a175ac05c1a0114fdaeeb1f037cc0593b8cf",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_05.txt",
+      "sha256": "76eef30708b4d4d8df5f78bd326da3a74bbd8a7ba5e2070e7baee6d06317d779"
+    },
+    {
+      "name": "Data/vel_06.txt",
+      "size": 622,
+      "gitBlobSha1": "e838053b21675d3433e7e3f45ffc73735121c76c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_06.txt",
+      "sha256": "b1fddc8e11a778771095593e8ce39730c58b850cb01ee87ab34c770bb76bb77e"
+    },
+    {
+      "name": "Data/vel_07.txt",
+      "size": 620,
+      "gitBlobSha1": "67ee21c6f471ab49496ba2c4eb9c7d1d13188e2f",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_07.txt",
+      "sha256": "00798045ef7302f426e06d3dc6e3acef8c349ac54d70074be68dabd083013fa8"
+    },
+    {
+      "name": "Data/vel_08.txt",
+      "size": 621,
+      "gitBlobSha1": "123de16cff4b91b2558f463a8f99fb09f430adeb",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_08.txt",
+      "sha256": "078cd53266fcca6421e830b3c176ad94b03c08d25247701cb7d2f534c0bf4ec7"
+    },
+    {
+      "name": "Data/vel_09.txt",
+      "size": 621,
+      "gitBlobSha1": "47328281073007fda83e137cf880cfd44d919e95",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_09.txt",
+      "sha256": "eed3917e6bb92f921543360607d3a24189e223d818a02164e1b9916430a70e1d"
+    },
+    {
+      "name": "Data/vel_10.txt",
+      "size": 622,
+      "gitBlobSha1": "0a45b2ae384cf4e8965d5cdf650ca75b98c9d364",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_10.txt",
+      "sha256": "a1f0ff3b7c975cc4bf2bfbf2a4d0fc594c181c97d354f5c9e838d6898e73ed4f"
+    },
+    {
+      "name": "Data/vel_11.txt",
+      "size": 622,
+      "gitBlobSha1": "0ce2d44bea7a833630f7a87591b6ad20476497b7",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_11.txt",
+      "sha256": "ac0e7ddda1871a6b89a410f2fb4d6317120996cc14b670f1bab496a5f79800c6"
+    },
+    {
+      "name": "Data/vel_12.txt",
+      "size": 622,
+      "gitBlobSha1": "edccc067b3664ac6ce8b90ccdded568df9b4bff3",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_12.txt",
+      "sha256": "9814c0f9e44583b834b2a2b0a5a14c59d0dd1c7ce1bbc58eda697ea07c429d9d"
+    },
+    {
+      "name": "Data/vel_13.txt",
+      "size": 622,
+      "gitBlobSha1": "8d55d37c0b8e3cb3fb05d6eb222a3450396fc95e",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_13.txt",
+      "sha256": "4c71135aa3cc3e42c8c7b4980d0a9a66bbcd2f8eea31314f85fd3afaaf6ead26"
+    },
+    {
+      "name": "Data/vel_14.txt",
+      "size": 624,
+      "gitBlobSha1": "c59853dcf85c68658edc48591d594fcd7da62b1e",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_14.txt",
+      "sha256": "f004d41dc10c69b11691fecacb6a2e4dafda0a7fec88a055290aa06f97f71090"
+    },
+    {
+      "name": "Data/vel_15.txt",
+      "size": 622,
+      "gitBlobSha1": "1bc51c44f06f050ef46a538e01b2d65418ea8539",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_15.txt",
+      "sha256": "ed0979ed6da8bd248d8b1fe5822a052aa3086d6ac2d2ae99a918ff8238cd72c5"
+    },
+    {
+      "name": "Data/vel_16.txt",
+      "size": 623,
+      "gitBlobSha1": "14eee22593452d7f9d44735b3ca25ccd1104b0fc",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Data/vel_16.txt",
+      "sha256": "0338becd5b2c87467c5ca6c1328d421bb56c7713d3352a17a3885088b531a7d7"
+    }
+  ],
+  "samples": [
+    {
+      "name": "A0v4.flac",
+      "size": 2607698,
+      "gitBlobSha1": "535628fa41bfbf9795d2dc8ae5a53304d061b670",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A0v4.flac",
+      "sha256": "b0b54771be38214c553edb113d4586a17f634513e2db06bd3997caed428b4f8f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1189137
+      },
+      "sourcePeak": 0.2366771697998047,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007100315093994141,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1026,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A0_v4.wav",
+      "outputPeak": 0.23667512279782305,
+      "outputFrames": 441000,
+      "outputSha256": "8c1194a022310de21773553a6c19d61ed55fe1cb9c6ef970fc022325fa674c17"
+    },
+    {
+      "name": "A0v8.flac",
+      "size": 2685849,
+      "gitBlobSha1": "b287d339ba5b1935eaa15a52dd0e58a682961385",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A0v8.flac",
+      "sha256": "f2745945c5a13a313f6d752f5391e203a4dfbddf4d973ddb009d69043452a1b4",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1200165
+      },
+      "sourcePeak": 0.40026330947875977,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012007899284362793,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1206,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A0_v8.wav",
+      "outputPeak": 0.4002607188025381,
+      "outputFrames": 441000,
+      "outputSha256": "ee33ea9d289b6e5999f2ef8389c9770355b5a74e88a675090f3c40dc5ee86b14"
+    },
+    {
+      "name": "A0v12.flac",
+      "size": 2785384,
+      "gitBlobSha1": "18f219e85b86643435fdfa4ec6665c8040545f66",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A0v12.flac",
+      "sha256": "25c3100c01a3ebfec668f020a8a2210f5eaf8e0a07ff7c06f5dda58931082274",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1233199
+      },
+      "sourcePeak": 0.5200953483581543,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.001560286045074463,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1127,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A0_v12.wav",
+      "outputPeak": 0.5200816291633663,
+      "outputFrames": 441000,
+      "outputSha256": "91e38e281c923f17682efc6f349242a95632d4f92d5da3b20a1d1e4078ce8b11"
+    },
+    {
+      "name": "C1v4.flac",
+      "size": 2479481,
+      "gitBlobSha1": "886d82cb146d108be4d5ca342bfd9949991a08f2",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C1v4.flac",
+      "sha256": "bfd3b62c6944faec44f35b2a225d5cf0f0c668d5198812beb1d1cc73c5cd2c5e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1133057
+      },
+      "sourcePeak": 0.33227717876434326,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0009968315362930298,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 2272,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C1_v4.wav",
+      "outputPeak": 0.3322738947278409,
+      "outputFrames": 441000,
+      "outputSha256": "489781fee463df0ce26deba398cb864673babc171fbe44dbb98f6bf91f50b4b5"
+    },
+    {
+      "name": "C1v8.flac",
+      "size": 2514395,
+      "gitBlobSha1": "0b00306a129aae190d5f67d3711b181693a5572e",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C1v8.flac",
+      "sha256": "67212ec084c1de5e51d2a9b0bc6204fab808ea0e034f71cfbed94a8a8de2fb5a",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1133892
+      },
+      "sourcePeak": 0.4066767692565918,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012200303077697754,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1771,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C1_v8.wav",
+      "outputPeak": 0.406679309806661,
+      "outputFrames": 441000,
+      "outputSha256": "6c65bb530103c9c7c14e510afbc15be19380871f2d707e49ae6d3a9b48b00003"
+    },
+    {
+      "name": "C1v12.flac",
+      "size": 2540684,
+      "gitBlobSha1": "29c3a15da3b698dfd28ac9beeea4e540f2357de0",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C1v12.flac",
+      "sha256": "a58eef21e035b58591e08d0f820e8fd861768f22a728f9a775cc0495caeb4208",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1129381
+      },
+      "sourcePeak": 0.5487716197967529,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.001646314859390259,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 2135,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C1_v12.wav",
+      "outputPeak": 0.5487322830655601,
+      "outputFrames": 441000,
+      "outputSha256": "b9c12a9254a5ab9ba7fd93017608942f2a0f3de1c66af4418916b785d3359e73"
+    },
+    {
+      "name": "D#1v4.flac",
+      "size": 2570362,
+      "gitBlobSha1": "fc5939b97eb88417b8da7a2ba083becc32ba4a69",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%231v4.flac",
+      "sha256": "db590cef46d071ef8b0258d3f06b785260cb5b078f2ff7d8d7e8c8574851c152",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1059213
+      },
+      "sourcePeak": 0.27919912338256836,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008375973701477051,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1369,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp1_v4.wav",
+      "outputPeak": 0.2791914873052438,
+      "outputFrames": 441000,
+      "outputSha256": "38ecd86c67174e9d08691fba8c1f3e27f3255c5fc4d9baa4330a6bc8a76eef96"
+    },
+    {
+      "name": "D#1v8.flac",
+      "size": 2889777,
+      "gitBlobSha1": "f1fe37b4781c702ff75cf1b084b137a0ca571ef6",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%231v8.flac",
+      "sha256": "26bd314332181a0093c5a8a07b58f457c4215e19475f26b398e8e0300e60be7b",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1165421
+      },
+      "sourcePeak": 0.42067551612854004,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012620265483856202,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1268,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp1_v8.wav",
+      "outputPeak": 0.42065893905122803,
+      "outputFrames": 441000,
+      "outputSha256": "2741a7825e44899c13c6a47b692d6674039484f64849eb3a7fa5bf0aa21827fa"
+    },
+    {
+      "name": "D#1v12.flac",
+      "size": 2896372,
+      "gitBlobSha1": "5a40da0718ee19e8fa611d0600cbf833fe743ad9",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%231v12.flac",
+      "sha256": "e241dd62bea0ac9e1cf5eedb894b514ef07ff1f64d67e4a8b1771b11a99f55de",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1153061
+      },
+      "sourcePeak": 0.5411536693572998,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0016234610080718994,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1151,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp1_v12.wav",
+      "outputPeak": 0.5411303239741909,
+      "outputFrames": 441000,
+      "outputSha256": "0a5ab3d6d758b511112f60b59f0b074988a9332ebe83ef857f6ae2aa8579de5c"
+    },
+    {
+      "name": "F#1v4.flac",
+      "size": 2613244,
+      "gitBlobSha1": "dcbae9ecaf328b1cee96b4c61888cf026cfde451",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%231v4.flac",
+      "sha256": "86ed38cc5c5d6bf0e7878a852eecedd0a36d258b9fc25825261abede438a1e8d",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1116285
+      },
+      "sourcePeak": 0.28646528720855713,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008593958616256714,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1357,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp1_v4.wav",
+      "outputPeak": 0.28647404955019384,
+      "outputFrames": 441000,
+      "outputSha256": "7d8e90c1769d5ea4dbad7fabc7f15aeffab90b3cd32060ecbb4cedcc02e39c40"
+    },
+    {
+      "name": "F#1v8.flac",
+      "size": 2694821,
+      "gitBlobSha1": "3daaccc66c09a7aa3564e30b27a999c9f7fe5b0c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%231v8.flac",
+      "sha256": "72c390d53bbec6eba14beecc422e2b081ab27b7a377604cd6f4cee5fdb3cf7ae",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1120858
+      },
+      "sourcePeak": 0.4449108839035034,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013347326517105104,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1281,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp1_v8.wav",
+      "outputPeak": 0.4449330928147688,
+      "outputFrames": 441000,
+      "outputSha256": "eed50a537924b2762012ed1f4121ed6132fe870fc4aeaf8bbd780f332c6bb48d"
+    },
+    {
+      "name": "F#1v12.flac",
+      "size": 2729124,
+      "gitBlobSha1": "dbccedc2ba13a084571db1cca3667b2b94294099",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%231v12.flac",
+      "sha256": "fe903a04b296bd7f38fafd39774aaa1698f6acfbeee627b5aa52baaad571bd54",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1120883
+      },
+      "sourcePeak": 0.5532290935516357,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0016596872806549073,
+        "firstSignificantSourceFrame": 480,
+        "trimStartSourceFrames": 384,
+        "trimStartSeconds": 0.008,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1248,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp1_v12.wav",
+      "outputPeak": 0.5531514459418838,
+      "outputFrames": 441000,
+      "outputSha256": "6b1b1665f8eaf83f23ff3b66c0992c747fb7d6a908bfd0d4f5829a0321d8b84e"
+    },
+    {
+      "name": "A1v4.flac",
+      "size": 2242163,
+      "gitBlobSha1": "79631701dd545f3d8b6f907f0c4c341502e1cfbd",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A1v4.flac",
+      "sha256": "a1f2cabbc5fbfce7825b465dc3230578d70a935b756254250473eb984cf9b2ae",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 948756
+      },
+      "sourcePeak": 0.2672867774963379,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008018603324890137,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 462,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A1_v4.wav",
+      "outputPeak": 0.2672913971115401,
+      "outputFrames": 441000,
+      "outputSha256": "b1ba3b467a5acb826fa78a1b71f643fb56f0291f14172dcb71506648a9888211"
+    },
+    {
+      "name": "A1v8.flac",
+      "size": 2707617,
+      "gitBlobSha1": "529ce51d5a90642ff2fc84a526564c5a971852e7",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A1v8.flac",
+      "sha256": "357b13d2e918e6146c3ead9d016a867bb49133b370e58dcb0bc1f41a56023abf",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1118733
+      },
+      "sourcePeak": 0.37001681327819824,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011100504398345948,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 673,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A1_v8.wav",
+      "outputPeak": 0.36988956181546095,
+      "outputFrames": 441000,
+      "outputSha256": "48ec1399cbd4b522ec4aa5b0700bb1e306d350ba7901e78952907b8f0f2ca458"
+    },
+    {
+      "name": "A1v12.flac",
+      "size": 2786755,
+      "gitBlobSha1": "a251b3f48b712f11565d4caeacbfc6905af02a5f",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A1v12.flac",
+      "sha256": "eebd4b102ae1101870b50aec8fbef972f695c796e468398d958f82930a9fa539",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1122992
+      },
+      "sourcePeak": 0.52744460105896,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0015823338031768798,
+        "firstSignificantSourceFrame": 48,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 717,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A1_v12.wav",
+      "outputPeak": 0.5273722456825746,
+      "outputFrames": 441000,
+      "outputSha256": "8ee90821887bc758848c8d3c2520f717e920318aff7a67a3dbeedf9fd3716bb8"
+    },
+    {
+      "name": "C2v4.flac",
+      "size": 2222842,
+      "gitBlobSha1": "44069876a12eb7010efd1d42952bcec27d1c448b",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C2v4.flac",
+      "sha256": "25d2ac48536df4b2241c54d4c180432c8a838143e876182801f5a5f92b4f898f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 946469
+      },
+      "sourcePeak": 0.27452635765075684,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008235790729522705,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 945,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C2_v4.wav",
+      "outputPeak": 0.2745111956777347,
+      "outputFrames": 441000,
+      "outputSha256": "80d4b5b32322fa7025a673bbcbd9af7708a3bb7c62651defe86e7349ee6bd30d"
+    },
+    {
+      "name": "C2v8.flac",
+      "size": 2561685,
+      "gitBlobSha1": "377ae98aa10f4e1698b1a0492c24a5817a9293ec",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C2v8.flac",
+      "sha256": "2fae21e19a214aeecd527a2235b106f66030df6ff51cfa789a5b4c6feb3d7357",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1071506
+      },
+      "sourcePeak": 0.38984549045562744,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011695364713668823,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 761,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C2_v8.wav",
+      "outputPeak": 0.38983799663441704,
+      "outputFrames": 441000,
+      "outputSha256": "c6407c98b1eb35dc541d6df66ef5d1242b53932bf7d1eafdded0288e6ce59862"
+    },
+    {
+      "name": "C2v12.flac",
+      "size": 2608263,
+      "gitBlobSha1": "02da76a4ea218bc75bed1d9eed35b7d1965ca255",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C2v12.flac",
+      "sha256": "dcbafcb704b7e1555b50b587269e7436769ac8c8fbb9234b1e2c3e84512c5ff8",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1069679
+      },
+      "sourcePeak": 0.5406092405319214,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0016218277215957642,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 648,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_C2_v12.wav",
+      "outputPeak": 0.5405804970494419,
+      "outputFrames": 441000,
+      "outputSha256": "cd76dcfbaee4b9e8a63cc432ff8f6c4dc1f6cada2234fda9245732cd258024d8"
+    },
+    {
+      "name": "D#2v4.flac",
+      "size": 2546475,
+      "gitBlobSha1": "02d16509980233442732fd8bb270e381d86b826b",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%232v4.flac",
+      "sha256": "1e05e5b875256fe71006b3c3e61440196f85a85c44aba9ecb7b1461ff3a10a02",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1067409
+      },
+      "sourcePeak": 0.29062986373901367,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008718895912170411,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 595,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp2_v4.wav",
+      "outputPeak": 0.29065150378713933,
+      "outputFrames": 441000,
+      "outputSha256": "c9d9f838c9e9b924bd3816b62356cee7298902faa0551745e75600dab7ff46b1"
+    },
+    {
+      "name": "D#2v8.flac",
+      "size": 2577675,
+      "gitBlobSha1": "378ef8fc0820f605b5645e4fd573bbde11350665",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%232v8.flac",
+      "sha256": "662b21ad6ee7634777fe8b5952c70db1795a23bfc8557ecb35844ce8d12eba70",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1061338
+      },
+      "sourcePeak": 0.3737715482711792,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011213146448135376,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 670,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp2_v8.wav",
+      "outputPeak": 0.3737538255626593,
+      "outputFrames": 441000,
+      "outputSha256": "f53f1190f5c0d00d9a85837e80f910fe3775abb2751d8b3333729073e4e38ef3"
+    },
+    {
+      "name": "D#2v12.flac",
+      "size": 2579711,
+      "gitBlobSha1": "d1a5949eb9cdbc805ce9ed808424e593930549d7",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%232v12.flac",
+      "sha256": "5bef947e86d4577bf7d0c8ee88f8561d8da8450922daea9d1ccfc2e103a7c412",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 1053345
+      },
+      "sourcePeak": 0.47621357440948486,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0014286407232284547,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 719,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Dsharp2_v12.wav",
+      "outputPeak": 0.47613807389052626,
+      "outputFrames": 441000,
+      "outputSha256": "033fd56ef317411fa2945ce0a6f30bbc024b2259a3e631f218f7dbc634c903f8"
+    },
+    {
+      "name": "F#2v4.flac",
+      "size": 2174299,
+      "gitBlobSha1": "4920957694cb66c041c7a43718465cddf3138a94",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%232v4.flac",
+      "sha256": "bc9d3a3e4ff5b2219d220e984eea3ab8e84d7222f89b5cfc4069cedb8af718e5",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 936653
+      },
+      "sourcePeak": 0.2530635595321655,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007591906785964966,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 808,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp2_v4.wav",
+      "outputPeak": 0.25302728125139207,
+      "outputFrames": 441000,
+      "outputSha256": "6c99f1a6218b9874c86c1191e6868d181e30bb2791dddc9cad2af45955806460"
+    },
+    {
+      "name": "F#2v8.flac",
+      "size": 2331259,
+      "gitBlobSha1": "ffb5fdab4db9271b211c36fa2c2da6567d2ac86a",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%232v8.flac",
+      "sha256": "05c649a7114f0845ee09716831242af9726b2429dad92eb170fc84e92f92a8e1",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 981724
+      },
+      "sourcePeak": 0.3789176940917969,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011367530822753906,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 618,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp2_v8.wav",
+      "outputPeak": 0.3789619590087781,
+      "outputFrames": 441000,
+      "outputSha256": "4dfbc497d209cb0f9f048d53d12add793613ef3a013ca6a47a953901b1315391"
+    },
+    {
+      "name": "F#2v12.flac",
+      "size": 2363308,
+      "gitBlobSha1": "a458e12c74a8e8acf4e482aae6fd59548e3bd6a6",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%232v12.flac",
+      "sha256": "075f000a9bc1813c089fda2741a324ec63dafa56b02fa965f0c4aa92f480db9c",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 978032
+      },
+      "sourcePeak": 0.4928610324859619,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0014785830974578858,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 812,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_Fsharp2_v12.wav",
+      "outputPeak": 0.4927017596840293,
+      "outputFrames": 441000,
+      "outputSha256": "06e2ef09268d161185d59ad6b5b3d8e8265355207563ad30f42783770ef202f5"
+    },
+    {
+      "name": "A2v4.flac",
+      "size": 1898385,
+      "gitBlobSha1": "174e85b13bb2a848aa7a8d326d230e8118b45f26",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A2v4.flac",
+      "sha256": "43563ad2ee61ba19560b969b79286b98edbd5ac6867b08bd956dac75bb376d27",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 777647
+      },
+      "sourcePeak": 0.2293381690979004,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0006880145072937012,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 577,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A2_v4.wav",
+      "outputPeak": 0.22935544157718196,
+      "outputFrames": 441000,
+      "outputSha256": "7ef06fa01eb6414b5a36eb0381f95b610d6927b6a261e67f8c88677c3e54a734"
+    },
+    {
+      "name": "A2v8.flac",
+      "size": 1901758,
+      "gitBlobSha1": "d3859c5c2c2d54ffe7c50989bd38c39a4e0c2f05",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A2v8.flac",
+      "sha256": "31dcdb3c1dea91943c4cccbb9f804dde2953ae1f16cb3990fe7def7acf60f944",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 765032
+      },
+      "sourcePeak": 0.3204505443572998,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0009613516330718994,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 757,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A2_v8.wav",
+      "outputPeak": 0.32043797580299677,
+      "outputFrames": 441000,
+      "outputSha256": "0c60ad53bc6a50f555cde66b24f03315d146325aca155d18cd9d8bbb9a8ced46"
+    },
+    {
+      "name": "A2v12.flac",
+      "size": 1976480,
+      "gitBlobSha1": "5e09e9e0dee6a74ba90e133bd4f7d127b9f8490b",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A2v12.flac",
+      "sha256": "f51451e0661c762b600b0f8f535f74dd8d73c41de1a228abbd037e5cc1783c0e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 776208
+      },
+      "sourcePeak": 0.442826509475708,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013284795284271241,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 757,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 10.0,
+      "outputFile": "piano_A2_v12.wav",
+      "outputPeak": 0.4426638444374712,
+      "outputFrames": 441000,
+      "outputSha256": "cca35d9aecb0956ea48e53b13da38c91c029f8e68025aa1242f18b8517c929b7"
+    },
+    {
+      "name": "C3v4.flac",
+      "size": 1689449,
+      "gitBlobSha1": "f444418d4e08bf183c468fc47877a6edac4dc7b3",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C3v4.flac",
+      "sha256": "172b7e9fe81980ddb64334477459ea91e039b3c083f76a022682182be3482660",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 761532
+      },
+      "sourcePeak": 0.2397754192352295,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007193262577056884,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 693,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C3_v4.wav",
+      "outputPeak": 0.23974064778372203,
+      "outputFrames": 352800,
+      "outputSha256": "30e4efc1256b77279bfd24c1030945e79adad2c75e83208cb4f8ae228813a29f"
+    },
+    {
+      "name": "C3v8.flac",
+      "size": 1741485,
+      "gitBlobSha1": "c2d2a2019e13bf292923667a3db1df8a47ea5cfc",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C3v8.flac",
+      "sha256": "b9200830cdef54fe0eb92db928dea161cd26d1faf31c7a08a4f51c97549e05bf",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 768077
+      },
+      "sourcePeak": 0.35478174686431885,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0010643452405929565,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 796,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C3_v8.wav",
+      "outputPeak": 0.3548422431805106,
+      "outputFrames": 352800,
+      "outputSha256": "44185efa778c6bb0b75a270dcaebf2c64a54133f0ef0dcc7a8e1c7f96d0d0a9b"
+    },
+    {
+      "name": "C3v12.flac",
+      "size": 1753840,
+      "gitBlobSha1": "7e06c77fe2f687b01fa110b9be12ce5c6620ed46",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C3v12.flac",
+      "sha256": "1250eceb6bc80b2a4559f5d15834a19b357f6f8695412445f0c292abcf9e3d78",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 758860
+      },
+      "sourcePeak": 0.4701725244522095,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0014105175733566285,
+        "firstSignificantSourceFrame": 480,
+        "trimStartSourceFrames": 384,
+        "trimStartSeconds": 0.008,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 856,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C3_v12.wav",
+      "outputPeak": 0.47008688472737736,
+      "outputFrames": 352800,
+      "outputSha256": "17328c837b4d68e0444357fff0bb8c74102af24aa89b63496f22f101e801511d"
+    },
+    {
+      "name": "D#3v4.flac",
+      "size": 1746227,
+      "gitBlobSha1": "c15e1da31dc99ff6adcc3cad8ea22f08201b0dd8",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%233v4.flac",
+      "sha256": "cc750a11b5cd63da9367fbe152ae51f18a6cb248364a24e1e76ee6b17d3d4b96",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 764598
+      },
+      "sourcePeak": 0.28606534004211426,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008581960201263427,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 816,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp3_v4.wav",
+      "outputPeak": 0.2861519663996154,
+      "outputFrames": 352800,
+      "outputSha256": "7880b0eb11803e995de052f374df9abb1f3f1712e836693261f0a4da40ee8000"
+    },
+    {
+      "name": "D#3v8.flac",
+      "size": 1770977,
+      "gitBlobSha1": "39c4deeac4149cb57627669f9aa7ffe2e7cf96dc",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%233v8.flac",
+      "sha256": "900ad0d774e6cefd44c1081b66d50556b3121bf1d3f255c5329a9117447b9cff",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 771912
+      },
+      "sourcePeak": 0.36217284202575684,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0010865185260772706,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 781,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp3_v8.wav",
+      "outputPeak": 0.36224957184745593,
+      "outputFrames": 352800,
+      "outputSha256": "b26d08ec044c96173faed85c3d3e17bc18899e8a9759794a17d103f076842df2"
+    },
+    {
+      "name": "D#3v12.flac",
+      "size": 1769835,
+      "gitBlobSha1": "7c636afe2c88b455620bcf55621035c0998b391c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%233v12.flac",
+      "sha256": "0681df11bb97982d3c29da9ad543f19ed412829677ea3e12a2152dcb4d921f9a",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 760659
+      },
+      "sourcePeak": 0.45749378204345703,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013724813461303712,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 720,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp3_v12.wav",
+      "outputPeak": 0.45789437947864947,
+      "outputFrames": 352800,
+      "outputSha256": "49a1ef722c9b8653189a31e7e4961eb2b81703b37a01e1046edcba65686f3d7c"
+    },
+    {
+      "name": "F#3v4.flac",
+      "size": 1767209,
+      "gitBlobSha1": "9c606c221ffa7157f0154a0ea3745f49ab558d2e",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%233v4.flac",
+      "sha256": "1d338855b9447cb85efd063d331b97471836967fefbb8eef2b964718b38f26cd",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 771770
+      },
+      "sourcePeak": 0.18817174434661865,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.000564515233039856,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 818,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp3_v4.wav",
+      "outputPeak": 0.18816859111705986,
+      "outputFrames": 352800,
+      "outputSha256": "53d148d440c7e21b324190a99fcbcaf47020cf5f4f338ee4276d79e3bcde25d3"
+    },
+    {
+      "name": "F#3v8.flac",
+      "size": 1805025,
+      "gitBlobSha1": "8b928e0affb6f03174588e8d1bce28b8d538f127",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%233v8.flac",
+      "sha256": "116a760f8552491d361cae27ac06f4e46d226f9a50e5ea58f6c385fac7efca68",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 774287
+      },
+      "sourcePeak": 0.3201446533203125,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0009604339599609375,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 814,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp3_v8.wav",
+      "outputPeak": 0.31980972679162567,
+      "outputFrames": 352800,
+      "outputSha256": "eed796b99f80f7a04b73fed7a9c10bbc3cfb5f380e49ba0140b5f8c6166af6d9"
+    },
+    {
+      "name": "F#3v12.flac",
+      "size": 1806073,
+      "gitBlobSha1": "c54c2f93814e07043bcbd860d6f23456dbf6690b",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%233v12.flac",
+      "sha256": "230d44d27106f66b09095d279ea7e2ad65be50c50bfed3a8449942306c1a8dc7",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 765421
+      },
+      "sourcePeak": 0.4342457056045532,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013027371168136596,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 743,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp3_v12.wav",
+      "outputPeak": 0.4341016544053855,
+      "outputFrames": 352800,
+      "outputSha256": "726d29e38c03838fd5471033fe86525f353c07162b57a64de54a97004ef270f0"
+    },
+    {
+      "name": "A3v4.flac",
+      "size": 1757672,
+      "gitBlobSha1": "85daca85afedb67bcb43091f237369fd11ab471f",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A3v4.flac",
+      "sha256": "7cfc9b2a18f8728431dfc236ca5c97793d3bdb413fd713eb13198c673982618f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 748017
+      },
+      "sourcePeak": 0.14463305473327637,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0004338991641998291,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 546,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A3_v4.wav",
+      "outputPeak": 0.14460929931451402,
+      "outputFrames": 352800,
+      "outputSha256": "985af86827080cc013d994dd2cef23dbb44269279ab04e9da9403da14cb52f5a"
+    },
+    {
+      "name": "A3v8.flac",
+      "size": 1787465,
+      "gitBlobSha1": "b4620f98c824e392d397866958d2e0b95db3f7ee",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A3v8.flac",
+      "sha256": "b02ed7c37d6b902552274c92d66911751ee52aac20b28618387e1388b1653ed4",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 749610
+      },
+      "sourcePeak": 0.2616844177246094,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007850532531738281,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 705,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A3_v8.wav",
+      "outputPeak": 0.26174790992365815,
+      "outputFrames": 352800,
+      "outputSha256": "c078b223cce3aa1ef3a6a527a8cc2956678df853090084f68a98dd3083aedbdb"
+    },
+    {
+      "name": "A3v12.flac",
+      "size": 1788330,
+      "gitBlobSha1": "eeb68a29bca9d50f817cbf667fef6cf52da805d5",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A3v12.flac",
+      "sha256": "d1fbc87c103c7c04ed6620156f6716c3b3862af36e6368e02bbf8886576b739e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 735165
+      },
+      "sourcePeak": 0.45024406909942627,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.001350732207298279,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 727,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A3_v12.wav",
+      "outputPeak": 0.45017131290343804,
+      "outputFrames": 352800,
+      "outputSha256": "0824479e687646057f9373937dd5e6b0e161c5bce629eee9decb12730f3f7511"
+    },
+    {
+      "name": "C4v4.flac",
+      "size": 1628805,
+      "gitBlobSha1": "e117320966904afc39687b40d6a1285ba2af4083",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C4v4.flac",
+      "sha256": "c68ab13a20f4e84361843417a17521d0cf7bd9587a43fbb36c04db56045990ed",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 755069
+      },
+      "sourcePeak": 0.26018667221069336,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007805600166320801,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 709,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C4_v4.wav",
+      "outputPeak": 0.2602582635110334,
+      "outputFrames": 352800,
+      "outputSha256": "6ab70a82d0a29608e77d5f4e7968d07e31d061d90da6f49dd822a29d2a0b7315"
+    },
+    {
+      "name": "C4v8.flac",
+      "size": 1774472,
+      "gitBlobSha1": "5d1c81dd7ee1d21cbec2fa1f2f605c098cf19679",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C4v8.flac",
+      "sha256": "36fb0535a1f21fe1dfc367c361dedda73710144e8c4940b40e97e6e5f8a3c694",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 776976
+      },
+      "sourcePeak": 0.3929409980773926,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011788229942321779,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 723,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C4_v8.wav",
+      "outputPeak": 0.3931106898389615,
+      "outputFrames": 352800,
+      "outputSha256": "185fe6e5c3276d630d185431565bf1a30beaef9da9a80ae4303e81741d17ea33"
+    },
+    {
+      "name": "C4v12.flac",
+      "size": 1776181,
+      "gitBlobSha1": "418e7e1b4ebedc6c9104f711118144941ee4cd06",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C4v12.flac",
+      "sha256": "21ebd25176ad28fabe364f22357cd8b7471b449c91b10ab4400c9c1408c74128",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 754437
+      },
+      "sourcePeak": 0.6529839038848877,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.001958951711654663,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 691,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C4_v12.wav",
+      "outputPeak": 0.6525318134660578,
+      "outputFrames": 352800,
+      "outputSha256": "aec1b290b3c57cd195e3cd1e68c0824e9226b625317dc84589b018f29da6a1eb"
+    },
+    {
+      "name": "D#4v4.flac",
+      "size": 1550296,
+      "gitBlobSha1": "84b262757ef3d13bb03e2ce2f91bf8f20080de87",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%234v4.flac",
+      "sha256": "dfd69f142177241a5219427e0c7012a19002b6bc98e11bafe287d7190f847b79",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 726851
+      },
+      "sourcePeak": 0.21873652935028076,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0006562095880508423,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 731,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp4_v4.wav",
+      "outputPeak": 0.21866676409319533,
+      "outputFrames": 352800,
+      "outputSha256": "6e77ea3a45110cffb729e3b251b3efb40e56a3682d936417482fbd04b903bfc2"
+    },
+    {
+      "name": "D#4v8.flac",
+      "size": 1652067,
+      "gitBlobSha1": "d29ac26013b03f46ec0c787c05e494437cdd0213",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%234v8.flac",
+      "sha256": "295179461449c598c44ad712977d47b41c0c25d9c782d349094e748dc06c0dfa",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 759551
+      },
+      "sourcePeak": 0.36443030834198,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.00109329092502594,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 687,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp4_v8.wav",
+      "outputPeak": 0.36425407002003085,
+      "outputFrames": 352800,
+      "outputSha256": "a8ea6453685acc728f6a4375613245886af8644d1c23051d1b5ced5a6f177ed9"
+    },
+    {
+      "name": "D#4v12.flac",
+      "size": 1645028,
+      "gitBlobSha1": "618418d9da018a7b39f76ec08929b9cad232f993",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%234v12.flac",
+      "sha256": "78bc671f77911b0750e5cf2b5377bea3f1615b64f97d209c5694433c673b0b31",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 746959
+      },
+      "sourcePeak": 0.4878424406051636,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0014635273218154908,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 573,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp4_v12.wav",
+      "outputPeak": 0.4875819220844918,
+      "outputFrames": 352800,
+      "outputSha256": "9694ab4cf2c4e09918b753da7c8331f359b3df9a34ca4761e64737b5b14a1ed2"
+    },
+    {
+      "name": "F#4v4.flac",
+      "size": 1317911,
+      "gitBlobSha1": "54b88eb6ff6b483bb6167d5bafd51adb04312a72",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%234v4.flac",
+      "sha256": "e024309f6f410365a9dea891a96d6df920e93d0c401a161f642c6e5e33de6ae3",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 630606
+      },
+      "sourcePeak": 0.16796600818634033,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.000503898024559021,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 525,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp4_v4.wav",
+      "outputPeak": 0.1680628535104007,
+      "outputFrames": 352800,
+      "outputSha256": "22c2569b09875d8ce944dc8166e6fba40e60ddc7970057659cf68fcf7a0d95c4"
+    },
+    {
+      "name": "F#4v8.flac",
+      "size": 1495175,
+      "gitBlobSha1": "191f7ee347d4513c8c7f0f41222239cfdbf7f497",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%234v8.flac",
+      "sha256": "be2dc339e8cec5f2f1da4ff583672dbc518bf5319547a08901b094617ac6998e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 705219
+      },
+      "sourcePeak": 0.2715327739715576,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008145983219146729,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 725,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp4_v8.wav",
+      "outputPeak": 0.2715295951362201,
+      "outputFrames": 352800,
+      "outputSha256": "dcd8481844afe16e219f1626a04ac824bab39fd0f3421c72e65ce811935a9b1c"
+    },
+    {
+      "name": "F#4v12.flac",
+      "size": 1549067,
+      "gitBlobSha1": "4787268dc66d6cc75093b92d39efaca3f32ecdea",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%234v12.flac",
+      "sha256": "dd0d513f3187457ef1f7c5c2dcb274d6132df10ade225dba06a0f212bd499572",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 718601
+      },
+      "sourcePeak": 0.40292882919311523,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012087864875793457,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 654,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp4_v12.wav",
+      "outputPeak": 0.4034014656297811,
+      "outputFrames": 352800,
+      "outputSha256": "4bdb9ba34422202a31ce56154ca8a8a88e1ea1e507fa69c794bd154dd13eac2d"
+    },
+    {
+      "name": "A4v4.flac",
+      "size": 1383657,
+      "gitBlobSha1": "1a9018881386288b67074613e667fbf8c19495d9",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A4v4.flac",
+      "sha256": "4c6cc00539fef67b2f9540d789f099fb3dd04d779f4d4d385224a4d815918583",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 654195
+      },
+      "sourcePeak": 0.17379224300384521,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005213767290115356,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 663,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A4_v4.wav",
+      "outputPeak": 0.17372802103684018,
+      "outputFrames": 352800,
+      "outputSha256": "58b910c248c753cad46a3e51491c3aa77e81bc4449732e430a9e5d376ef07469"
+    },
+    {
+      "name": "A4v8.flac",
+      "size": 1382828,
+      "gitBlobSha1": "f2d55a0077eca5782b8a70ae42bbe3230dc2cc26",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A4v8.flac",
+      "sha256": "59529694455698d7fd212cde8eec4029eaae8e5e6d454bb48bf36428eaa8009b",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 639502
+      },
+      "sourcePeak": 0.30844998359680176,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0009253499507904053,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 612,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A4_v8.wav",
+      "outputPeak": 0.30849323250849925,
+      "outputFrames": 352800,
+      "outputSha256": "b2a292256d88948ff5727945b53a17c101c4b609b50ac8ba2324303b06deeaf2"
+    },
+    {
+      "name": "A4v12.flac",
+      "size": 1451680,
+      "gitBlobSha1": "b585d2e01dea3a2a9af9fa79d523d00053003e5b",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A4v12.flac",
+      "sha256": "16f43b59ecb870359978c4523c97745a13c439d56e574ed5a96aec633aae5f4f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 659642
+      },
+      "sourcePeak": 0.45658087730407715,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013697426319122315,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 537,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A4_v12.wav",
+      "outputPeak": 0.4572205778309967,
+      "outputFrames": 352800,
+      "outputSha256": "98cfd81268bfc3e2507c34765d9630b17875dbe4f75c0cfd371cfcf8acd1555a"
+    },
+    {
+      "name": "C5v4.flac",
+      "size": 1468588,
+      "gitBlobSha1": "2b72e6ac462075d0b79432ddb4f5fbbe114ca6be",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C5v4.flac",
+      "sha256": "0d7c117cdb01b261cb3a303c4a7c9f56ef42015078e3c69ab3aa19dd39287a6c",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 736039
+      },
+      "sourcePeak": 0.1945638656616211,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005836915969848632,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 587,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C5_v4.wav",
+      "outputPeak": 0.19451667718135884,
+      "outputFrames": 352800,
+      "outputSha256": "3f3c19c1b18a5e15cff6b695786af0a4306bbe1914cd03b7861473153f1ad9dc"
+    },
+    {
+      "name": "C5v8.flac",
+      "size": 1516971,
+      "gitBlobSha1": "8f2a4baab012730693c1b173ce463056c22e42d0",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C5v8.flac",
+      "sha256": "f663242a552aad54113f186a6dd90c907c81d1f6374887a23179814544f78d79",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 747517
+      },
+      "sourcePeak": 0.27800440788269043,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008340132236480713,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 498,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C5_v8.wav",
+      "outputPeak": 0.2781691954656956,
+      "outputFrames": 352800,
+      "outputSha256": "1aa27c4c735e30b22fd605a294447af2568a402ced51409794dd0496263c59ef"
+    },
+    {
+      "name": "C5v12.flac",
+      "size": 1537892,
+      "gitBlobSha1": "773aef039444641fe4d1ec0aa66aad192b40c499",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C5v12.flac",
+      "sha256": "bef7fa0e75075f0566400a5f5d7c313d6e295d287413c88e742e2dc2205d8915",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 744720
+      },
+      "sourcePeak": 0.44843053817749023,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013452916145324707,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 814,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_C5_v12.wav",
+      "outputPeak": 0.44828597669775544,
+      "outputFrames": 352800,
+      "outputSha256": "18b1b869d44e4437483505e265e77177c1a0247afc57101b169846ec79385d51"
+    },
+    {
+      "name": "D#5v4.flac",
+      "size": 1263747,
+      "gitBlobSha1": "64ad0790398a06cea1f047e846e3365d2d142cc5",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%235v4.flac",
+      "sha256": "c7f25db21896025a0b71832e3e6b859a5e88f270b8230555b9ac4772913bf821",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 622833
+      },
+      "sourcePeak": 0.18033099174499512,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005409929752349853,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 719,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp5_v4.wav",
+      "outputPeak": 0.18033018646273932,
+      "outputFrames": 352800,
+      "outputSha256": "c3189a5473707a7a26c74267d103895afe2f5cab165f2f5cae0905f2a772b409"
+    },
+    {
+      "name": "D#5v8.flac",
+      "size": 1276573,
+      "gitBlobSha1": "2669ad6e47a5d17882db0960d2a05f162b2f0b1a",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%235v8.flac",
+      "sha256": "f841ad0506994313f4202fbe3f07d917e60eeb10fb3461df3eae4fb9cd58432a",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 621479
+      },
+      "sourcePeak": 0.24706625938415527,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007411987781524658,
+        "firstSignificantSourceFrame": 432,
+        "trimStartSourceFrames": 336,
+        "trimStartSeconds": 0.007,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 754,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp5_v8.wav",
+      "outputPeak": 0.24697831267910345,
+      "outputFrames": 352800,
+      "outputSha256": "38e078f7e6ee03e05c54aad914028b8f62f19c47e9311bfb4e2432d2ff39bff6"
+    },
+    {
+      "name": "D#5v12.flac",
+      "size": 1346881,
+      "gitBlobSha1": "1f5e56bd4b02d7f30e88eef34ca587377ad3216f",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%235v12.flac",
+      "sha256": "84561eff0510969f90068b03de4b70c2965082609f4daf73dc80a213c67b4721",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 642215
+      },
+      "sourcePeak": 0.3859062194824219,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011577186584472657,
+        "firstSignificantSourceFrame": 432,
+        "trimStartSourceFrames": 336,
+        "trimStartSeconds": 0.007,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 686,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Dsharp5_v12.wav",
+      "outputPeak": 0.3858653213956861,
+      "outputFrames": 352800,
+      "outputSha256": "2ca9e85f76120ffb5e9edcfd59a914b522f3d6d82803be39e057694ff3cfadac"
+    },
+    {
+      "name": "F#5v4.flac",
+      "size": 1119439,
+      "gitBlobSha1": "142a45fd5c55bdabcf3bb7ee19f3934fac8c10c2",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%235v4.flac",
+      "sha256": "2a7a898c7e1b1287cc6b79844b24bd7cd39f232573e380f2264e1694a38845c1",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 558642
+      },
+      "sourcePeak": 0.18444287776947021,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005533286333084107,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 692,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp5_v4.wav",
+      "outputPeak": 0.1844995757683663,
+      "outputFrames": 352800,
+      "outputSha256": "fde35c72f23ba2fe26898810101bcd49e126173016ea60b5e7d51e40d6e72fea"
+    },
+    {
+      "name": "F#5v8.flac",
+      "size": 1164441,
+      "gitBlobSha1": "1128d4579bb3a2d48ae1e53104377fd05d566463",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%235v8.flac",
+      "sha256": "7757ef988e874313432a3b4ed586f0407fd4a9933b7ccc613b8ff96a2f83bc87",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 572046
+      },
+      "sourcePeak": 0.27651453018188477,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008295435905456543,
+        "firstSignificantSourceFrame": 480,
+        "trimStartSourceFrames": 384,
+        "trimStartSeconds": 0.008,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 712,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp5_v8.wav",
+      "outputPeak": 0.27649041897207755,
+      "outputFrames": 352800,
+      "outputSha256": "af4e324a6636b640b9e4b4b8f5d7e6f68cfea10abb453aaa0f21e84be21e245c"
+    },
+    {
+      "name": "F#5v12.flac",
+      "size": 1169784,
+      "gitBlobSha1": "62e1d10b8942895485116d08f915aea00f39e306",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%235v12.flac",
+      "sha256": "8c93b4180c17e7c6c998b66d505cdcaea2bc9037790ab5e51847bbc28a4cf27e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 564259
+      },
+      "sourcePeak": 0.42383861541748047,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012715158462524414,
+        "firstSignificantSourceFrame": 432,
+        "trimStartSourceFrames": 336,
+        "trimStartSeconds": 0.007,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 709,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_Fsharp5_v12.wav",
+      "outputPeak": 0.42389663530622534,
+      "outputFrames": 352800,
+      "outputSha256": "170dfca1807c29f33832d67f26a561f15999e32e35581b5d34a79ba2ec4accc0"
+    },
+    {
+      "name": "A5v4.flac",
+      "size": 717980,
+      "gitBlobSha1": "b5a67dd216af1634e63f6dda86eaa814c4128fac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A5v4.flac",
+      "sha256": "36bfb6bd47e8412e842334856c0c7f19005462f69f7cc9e1829bd7bfe0e3fe72",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 329567
+      },
+      "sourcePeak": 0.12987947463989258,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0003896384239196777,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 1122,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A5_v4.wav",
+      "outputPeak": 0.12968802274821445,
+      "outputFrames": 302790,
+      "outputSha256": "215245ced806a57883626aa3f659a0a61223bd0382e1525a2411f02f54772ca9"
+    },
+    {
+      "name": "A5v8.flac",
+      "size": 1109347,
+      "gitBlobSha1": "06c2ab95dda24dfd66c6a29b2add45dca098163d",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A5v8.flac",
+      "sha256": "c71f80ecee2dfc37519769ab97e2e92732bfce9314f6562ba884a737cfa018a9",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 505895
+      },
+      "sourcePeak": 0.27390336990356445,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008217101097106933,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 532,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A5_v8.wav",
+      "outputPeak": 0.2738027548128922,
+      "outputFrames": 352800,
+      "outputSha256": "2f72951b503803ec2584ee1c2e526c30b4539a9de01746b3d3bdd02f53f067cd"
+    },
+    {
+      "name": "A5v12.flac",
+      "size": 1119370,
+      "gitBlobSha1": "2b6646139a55836d798370917dc3c0c9ff7399ea",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A5v12.flac",
+      "sha256": "5cbe3f13c10a181fb6ab5637f083988eeaac4dfa900cef847693c2748c0b7bab",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 498346
+      },
+      "sourcePeak": 0.41978418827056885,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0012593525648117066,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 636,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 8.0,
+      "outputFile": "piano_A5_v12.wav",
+      "outputPeak": 0.4201612918909926,
+      "outputFrames": 352800,
+      "outputSha256": "1dd602c3e20aab64926384bc94f1753146ed8b0084d81c7c7cb6a48d4a948964"
+    },
+    {
+      "name": "C6v4.flac",
+      "size": 601137,
+      "gitBlobSha1": "c92b02529426929342b3354731b32b1fd6f06aaf",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C6v4.flac",
+      "sha256": "1f3f32e401bbd2a87a9c5b094aa6f748213fe762f3026554eb60305c02399ef7",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 261515
+      },
+      "sourcePeak": 0.17406463623046875,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005221939086914063,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 777,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C6_v4.wav",
+      "outputPeak": 0.17421782274325726,
+      "outputFrames": 240135,
+      "outputSha256": "e23d5f8df21822e2572c7e47312a8c4acfef67ffa66ced511c09c0c884e7ecaf"
+    },
+    {
+      "name": "C6v8.flac",
+      "size": 695617,
+      "gitBlobSha1": "4728c69c56c82a98e54cf93a289afd282705317d",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C6v8.flac",
+      "sha256": "e5d5db275007d4b0e35ce94b00e0b53f6c659707517ee1326bd77eeba119693b",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 299079
+      },
+      "sourcePeak": 0.2935965061187744,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008807895183563232,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 780,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C6_v8.wav",
+      "outputPeak": 0.2935932578735979,
+      "outputFrames": 264600,
+      "outputSha256": "5d80b1579da1cdd1b332d26c6bb33fa88d16f631ad0297f23edbfbf98d8ad6ad"
+    },
+    {
+      "name": "C6v12.flac",
+      "size": 722945,
+      "gitBlobSha1": "7511b31db67a31f8555d83aa5d5f48fbe9365b87",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C6v12.flac",
+      "sha256": "a3bd4d493607a6683ecd0c9d638febf643f94130042828e77253dda60d5d3761",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 300242
+      },
+      "sourcePeak": 0.5154266357421875,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0015462799072265626,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 614,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C6_v12.wav",
+      "outputPeak": 0.5140199276542247,
+      "outputFrames": 264600,
+      "outputSha256": "0232fd0fa59c6591960f9a47a1702d78f1b126d065927b2ced26caaff8ee80ba"
+    },
+    {
+      "name": "D#6v4.flac",
+      "size": 743953,
+      "gitBlobSha1": "1b17d7e0ae76bda00d370b44d82f50f53bb69e42",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%236v4.flac",
+      "sha256": "bdc6b8a89901d8b5f753ba8fdbd18cc743bdeb15f47502f4b0fbe85e1335760f",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 315403
+      },
+      "sourcePeak": 0.15464282035827637,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0004639284610748291,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 594,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp6_v4.wav",
+      "outputPeak": 0.15430136786735776,
+      "outputFrames": 264600,
+      "outputSha256": "6773018a522d85261d4a4531c1b370c89a4692259c105662f1ea17005821c653"
+    },
+    {
+      "name": "D#6v8.flac",
+      "size": 778561,
+      "gitBlobSha1": "5eec895354095719acfa86d88f08488f3939b058",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%236v8.flac",
+      "sha256": "ef9d6d285795ea2ed51c0d0261d7d4997d1041dadc53939363a080edc5dcdc4e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 321574
+      },
+      "sourcePeak": 0.3449798822402954,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0010349396467208862,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 672,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp6_v8.wav",
+      "outputPeak": 0.34601400202534,
+      "outputFrames": 264600,
+      "outputSha256": "cb9bdf21d63ec6308c8fee0c42a0b46374fd060fc88543bd5438fe5dfa6a7000"
+    },
+    {
+      "name": "D#6v12.flac",
+      "size": 804486,
+      "gitBlobSha1": "6972953060aeae45445cacae083a14822a52ec96",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%236v12.flac",
+      "sha256": "d4e2b79976564ea6de12fa0d67fdc2f3fd408c34eca0b7e5261fd03762218efc",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 327446
+      },
+      "sourcePeak": 0.46495652198791504,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013948695659637452,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 663,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp6_v12.wav",
+      "outputPeak": 0.46436211424178225,
+      "outputFrames": 264600,
+      "outputSha256": "ca788d84fbfacb96f952313bd2045c8100886ec3791027199d34ff1f82229d2c"
+    },
+    {
+      "name": "F#6v4.flac",
+      "size": 605865,
+      "gitBlobSha1": "cd1f16223c7b79338796155d37e8f9e022dee7a8",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%236v4.flac",
+      "sha256": "dc69c0e742459d41b91e1c2ccba30160fe27bc70bd41483454c23a41321db0a5",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 265761
+      },
+      "sourcePeak": 0.1240842342376709,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0003722527027130127,
+        "firstSignificantSourceFrame": 96,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 662,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp6_v4.wav",
+      "outputPeak": 0.12390810466543996,
+      "outputFrames": 244168,
+      "outputSha256": "245391ae95d6240b43c4c88027412513a5433646345de7a427b18f2106614ac1"
+    },
+    {
+      "name": "F#6v8.flac",
+      "size": 655340,
+      "gitBlobSha1": "ebf05faa5b7991a848b11e53fc6cebc66e26f1c2",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%236v8.flac",
+      "sha256": "8dd12f1be1cad3bb4be36c5609ff8426640d6d37b3ef0b9b3eed3b159ae51088",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 280984
+      },
+      "sourcePeak": 0.2409902811050415,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0007229708433151245,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 669,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp6_v8.wav",
+      "outputPeak": 0.24089375308955724,
+      "outputFrames": 257978,
+      "outputSha256": "e0615731421bce295737b43a0c9c49edc0f4a55e120ec8eca1542057ae23b2fd"
+    },
+    {
+      "name": "F#6v12.flac",
+      "size": 698769,
+      "gitBlobSha1": "3d365e417225a2a93687073a55cb9b96a691e918",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%236v12.flac",
+      "sha256": "cde3a16c0edacc9e3fa7adcb0c47ab23b4053df316f8f0a9e952413c8807cba0",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 294366
+      },
+      "sourcePeak": 0.4446594715118408,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0013339784145355224,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 632,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp6_v12.wav",
+      "outputPeak": 0.44413870655961707,
+      "outputFrames": 264600,
+      "outputSha256": "72b0abf6f06af856531d6be97243c92de0e7862d563de9ae4286f027586d77d2"
+    },
+    {
+      "name": "A6v4.flac",
+      "size": 620431,
+      "gitBlobSha1": "50fbb0b4ed59afbb886f74d76905a04cbd9c5f7f",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A6v4.flac",
+      "sha256": "7d27a6ae1f006a1feeeb230afaa269ff67932ac8fac06ecd91261064cca3ef2b",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 304474
+      },
+      "sourcePeak": 0.1202237606048584,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0003606712818145752,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 619,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A6_v4.wav",
+      "outputPeak": 0.12063441573337673,
+      "outputFrames": 264600,
+      "outputSha256": "4c4a95d87b14d34acf30880a1b302fd6f10e4cb7455e94da0e04424352f19b6f"
+    },
+    {
+      "name": "A6v8.flac",
+      "size": 681474,
+      "gitBlobSha1": "54c51c1bb786f7d5714d83d912f20727d9906b4c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A6v8.flac",
+      "sha256": "6c49808b96392ddec4fd237a89af11fb70ed31da11a6022905f6eb3ae897c989",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 326882
+      },
+      "sourcePeak": 0.19472479820251465,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0005841743946075439,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 632,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A6_v8.wav",
+      "outputPeak": 0.1949544654080138,
+      "outputFrames": 264600,
+      "outputSha256": "1637572a858c5d4890c3092ce93a5861aadcffc1106d4141bb856d688af629ce"
+    },
+    {
+      "name": "A6v12.flac",
+      "size": 681845,
+      "gitBlobSha1": "bc258fd95774bb9b7789ca6139bd7e96aac37772",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A6v12.flac",
+      "sha256": "59b295d84254d1f3722a9140fc4472f592c651239ceffc30392295302141f8f3",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 323090
+      },
+      "sourcePeak": 0.3809547424316406,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.001142864227294922,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 592,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A6_v12.wav",
+      "outputPeak": 0.3794042862816521,
+      "outputFrames": 264600,
+      "outputSha256": "73563638cdff616bfa588b8fe16502d5287e5163184a189cdf777beead0f3714"
+    },
+    {
+      "name": "C7v4.flac",
+      "size": 401277,
+      "gitBlobSha1": "473d480a9216c2cd0d73e8413d42f02de614e388",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C7v4.flac",
+      "sha256": "02f3af88370ddd201d280da57680df0c6b372557340f7aabfe399ce7ca882353",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 194809
+      },
+      "sourcePeak": 0.09209334850311279,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0002762800455093384,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 548,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C7_v4.wav",
+      "outputPeak": 0.09180364273437402,
+      "outputFrames": 178937,
+      "outputSha256": "024207dc74118c0088134d80c1dd9dfb1c8281faa3065d9693c24a2a35fb0c25"
+    },
+    {
+      "name": "C7v8.flac",
+      "size": 412115,
+      "gitBlobSha1": "65a6c3d80ffc3a40a3dffbf183972a10e316018e",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C7v8.flac",
+      "sha256": "fbe68e0670fd7edd46923e983da11a97ca7d2b8826585258b81918f97e268b68",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 195993
+      },
+      "sourcePeak": 0.20501160621643066,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.000615034818649292,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 608,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C7_v8.wav",
+      "outputPeak": 0.20508802118662806,
+      "outputFrames": 179849,
+      "outputSha256": "b8602cec48fb8ae576bab61b55424c370016be941e56ebe158f1c1d3a2d1779a"
+    },
+    {
+      "name": "C7v12.flac",
+      "size": 459884,
+      "gitBlobSha1": "bfb00b6a6218ccf23e9101008701bf67e9d927b6",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C7v12.flac",
+      "sha256": "ca09022f1419de4e16cf310fc300b7b2f1f9f05f5b5d53f10f16506c6b937d40",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 215384
+      },
+      "sourcePeak": 0.35515689849853516,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0010654706954956056,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 655,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C7_v12.wav",
+      "outputPeak": 0.3554071931317861,
+      "outputFrames": 197664,
+      "outputSha256": "c4a45d2d53082294db27ccd0210bb41e6cfd01fdd8e1895a3001b544e55ba42f"
+    },
+    {
+      "name": "D#7v4.flac",
+      "size": 473644,
+      "gitBlobSha1": "fb3320c369664e5a290e18ee40585fd962c250ef",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%237v4.flac",
+      "sha256": "a8f34f346e4510c3b6d979da6d9bf2d8fe13ec81e4b4225a525725e01df1ccdc",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 231939
+      },
+      "sourcePeak": 0.05975747108459473,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.00017927241325378418,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 694,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp7_v4.wav",
+      "outputPeak": 0.059650206714713834,
+      "outputFrames": 213050,
+      "outputSha256": "ad7e8185dbd15b2a7a1da8d7249bf597b4860b73e8bf8cdc5ad1aa5516bcfa21"
+    },
+    {
+      "name": "D#7v8.flac",
+      "size": 485801,
+      "gitBlobSha1": "2abc0bba8df135f77a9697b05836ddc926d5b3da",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%237v8.flac",
+      "sha256": "848aea2c59fe175ff0d4772d6828a5f71e1869ac0aadb5c4dd1e065e2cd8cc53",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 234140
+      },
+      "sourcePeak": 0.14853286743164062,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0004455986022949219,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 750,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp7_v8.wav",
+      "outputPeak": 0.14823078290208233,
+      "outputFrames": 214984,
+      "outputSha256": "c357243adcd4de84c6355ce148439faa716f9ffeed1c7585520f184e3274b7ae"
+    },
+    {
+      "name": "D#7v12.flac",
+      "size": 514343,
+      "gitBlobSha1": "cfaf8fc8d793a9a64a6cf6af56abbf9a7c491e91",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/D%237v12.flac",
+      "sha256": "f7cfb333f584e1371a079c2e17fb831111ec8460a9ecae20ac9904a74fc52c12",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 241615
+      },
+      "sourcePeak": 0.31507039070129395,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0009452111721038819,
+        "firstSignificantSourceFrame": 432,
+        "trimStartSourceFrames": 336,
+        "trimStartSeconds": 0.007,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 598,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Dsharp7_v12.wav",
+      "outputPeak": 0.31615492067575723,
+      "outputFrames": 221676,
+      "outputSha256": "1688043b8dcbea43b66a37cd973acfc8ffe565c310e46bb34fe322c68769a896"
+    },
+    {
+      "name": "F#7v4.flac",
+      "size": 570635,
+      "gitBlobSha1": "c1ac67e7d0d4de1a90dab5ffad7507d1d968ec0a",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%237v4.flac",
+      "sha256": "c42b84fca6700ab05a00b34c15bc120c5fdc2387abfa671c4ff8f5cc04dbffac",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 228552
+      },
+      "sourcePeak": 0.12201356887817383,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0003660407066345215,
+        "firstSignificantSourceFrame": 192,
+        "trimStartSourceFrames": 96,
+        "trimStartSeconds": 0.002,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 679,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp7_v4.wav",
+      "outputPeak": 0.12315169840032583,
+      "outputFrames": 209894,
+      "outputSha256": "4944b5d56c43d9a2639b6555f5fbf6dcce1b2f10b3477ee3c1448d908a3489a3"
+    },
+    {
+      "name": "F#7v8.flac",
+      "size": 582250,
+      "gitBlobSha1": "e19f9963d3ca10803e7612c4f601d8a42a16ef22",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%237v8.flac",
+      "sha256": "4cc707928d34b8d56b23571d75eb8ce13c4161ae2f649a822b0fd407e0aa1131",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 232026
+      },
+      "sourcePeak": 0.19365358352661133,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.000580960750579834,
+        "firstSignificantSourceFrame": 336,
+        "trimStartSourceFrames": 240,
+        "trimStartSeconds": 0.005,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 727,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp7_v8.wav",
+      "outputPeak": 0.19484134674283674,
+      "outputFrames": 212954,
+      "outputSha256": "bb4d5cd5e012780406c7b8d3785e63424e45514788b674b5ac1817f2dd9d3434"
+    },
+    {
+      "name": "F#7v12.flac",
+      "size": 587353,
+      "gitBlobSha1": "0bc83c0161d4d3129bb3d8fff95c6b78ed90debd",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/F%237v12.flac",
+      "sha256": "e2807812cead4cda7f1aefb306bb96793f3560d17d85fcef92a3e413031f865e",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 230156
+      },
+      "sourcePeak": 0.36818814277648926,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0011045644283294678,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 650,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_Fsharp7_v12.wav",
+      "outputPeak": 0.36662557167835613,
+      "outputFrames": 211280,
+      "outputSha256": "06103c076f1e0c863844abdb39a61e5324a51186e89af540ebc6fef788d0e4f1"
+    },
+    {
+      "name": "A7v4.flac",
+      "size": 366018,
+      "gitBlobSha1": "f44a21c5e28ca05a9ad2048602b7a3372c02fd24",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A7v4.flac",
+      "sha256": "c07538c0f0bec38b06ae01be359029b831c3ef0bd90256800bb9630c96dc791b",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 185300
+      },
+      "sourcePeak": 0.056976914405822754,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.00017093074321746827,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 665,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A7_v4.wav",
+      "outputPeak": 0.0575818112003273,
+      "outputFrames": 170201,
+      "outputSha256": "fa262812126055f45e3da85decf3ad5f7cc6983f428b8b4ecdb1fb5049b9b5d6"
+    },
+    {
+      "name": "A7v8.flac",
+      "size": 392082,
+      "gitBlobSha1": "e6709d06167bea4717bd68e489d267346fcc893c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A7v8.flac",
+      "sha256": "5da612cb53df006ec83101ecdf00f15b8c2a5f7d98a63eceb310ebfd2cb82ea8",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 193365
+      },
+      "sourcePeak": 0.1181570291519165,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.00035447108745574954,
+        "firstSignificantSourceFrame": 240,
+        "trimStartSourceFrames": 144,
+        "trimStartSeconds": 0.003,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 694,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A7_v8.wav",
+      "outputPeak": 0.11810379071184765,
+      "outputFrames": 177522,
+      "outputSha256": "ec8a6fb756931967ba623e29a80ae6e5e5af61903123afef98c0a4df448d87cc"
+    },
+    {
+      "name": "A7v12.flac",
+      "size": 374698,
+      "gitBlobSha1": "3729453e8d1a3ea2d3e1dd5ba82ccf51fa40e667",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/A7v12.flac",
+      "sha256": "df547445b234b911b9f31576749869d07a38de6f4b7dc400ab4a1e4ca34825e7",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 181215
+      },
+      "sourcePeak": 0.2725212574005127,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008175637722015381,
+        "firstSignificantSourceFrame": 384,
+        "trimStartSourceFrames": 288,
+        "trimStartSeconds": 0.006,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 707,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_A7_v12.wav",
+      "outputPeak": 0.27394289076366535,
+      "outputFrames": 166227,
+      "outputSha256": "4f59c141da71e5c13a0dd06214d4a0f5248a3845f6d8031097046e765cec8b66"
+    },
+    {
+      "name": "C8v4.flac",
+      "size": 306364,
+      "gitBlobSha1": "5a322f58cd9cbba1463b680b1801ea75bda0c5a7",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C8v4.flac",
+      "sha256": "1f8ff28ffd159a073361814600b7b71d36aff470637390c0d1224ba135015e47",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 134920
+      },
+      "sourcePeak": 0.09322190284729004,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0002796657085418701,
+        "firstSignificantSourceFrame": 144,
+        "trimStartSourceFrames": 48,
+        "trimStartSeconds": 0.001,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 655,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C8_v4.wav",
+      "outputPeak": 0.09240652176310167,
+      "outputFrames": 123914,
+      "outputSha256": "dd32a27ec19aff73ff322d54b345527dab8acc37d30be3f968b0e6035cf66b11"
+    },
+    {
+      "name": "C8v8.flac",
+      "size": 428472,
+      "gitBlobSha1": "48ebffd513821de09968fb36560d3d0a384b689c",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C8v8.flac",
+      "sha256": "85e4b0349c420358a280aa38cee25948e950a5a13af31317018ae66f5b9ef73c",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 186535
+      },
+      "sourcePeak": 0.13321828842163086,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0003996548652648926,
+        "firstSignificantSourceFrame": 48,
+        "trimStartSourceFrames": 0,
+        "trimStartSeconds": 0.0,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 708,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C8_v8.wav",
+      "outputPeak": 0.13378519341842646,
+      "outputFrames": 171380,
+      "outputSha256": "4e3668adf6a40611dd297294cea083ef78abae4c50065355cbb35578fc8b4294"
+    },
+    {
+      "name": "C8v12.flac",
+      "size": 401592,
+      "gitBlobSha1": "d40f996dd63c232d9aa5a3c684d330f4c8bc0508",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/SalamanderGrandPiano/3382bf9496bba2486f5ab0de55a264d1dfc38404/Samples/C8v12.flac",
+      "sha256": "b90b2f97d4a42885e2e8b21a75c7e0e0f6d77f9f045e66cc2bff587af5a6e222",
+      "sourceFormat": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "bitsPerSample": 24,
+        "frames": 172637
+      },
+      "sourcePeak": 0.27826356887817383,
+      "onset": {
+        "method": "1ms stereo-channel RMS; 2 of 3 windows; 2ms retained preroll",
+        "threshold": 0.0008347907066345215,
+        "firstSignificantSourceFrame": 288,
+        "trimStartSourceFrames": 192,
+        "trimStartSeconds": 0.004,
+        "maximumAllowedTrimSeconds": 0.015
+      },
+      "originalOptionalSfzOffsetFrames": 579,
+      "originalOptionalSfzOffsetApplied": false,
+      "maximumTailSeconds": 6.0,
+      "outputFile": "piano_C8_v12.wav",
+      "outputPeak": 0.27784473262888065,
+      "outputFrames": 158434,
+      "outputSha256": "691fcfcb5a2d12b6eda4a974666df81fac00fbee40dac552072a2a5eb04a46b9"
+    }
+  ]
+}
